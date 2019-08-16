@@ -1,9 +1,9 @@
 import React from 'react';
 
-export const Pet = () => {
+export default function Pet({ name, animal, breed }) {
   return React.createElement('div', {}, [
-    React.createElement('h1', {}, 'Kika'),
-    React.createElement('h2', {}, 'Dog'),
-    React.createElement('h2', {}, 'No Breed')
+    React.createElement('h1', {}, name),
+    React.createElement('h2', {}, animal),
+    React.createElement('h2', {}, breed)
   ]);
-};
+}
